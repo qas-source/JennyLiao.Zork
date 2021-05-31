@@ -1,0 +1,82 @@
+<!--the proper ending page, like the one that they are supposed to get to to win-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>The end</title> 
+        <meta name="author" content="Jenny" /> 
+        <meta name="description" content="the end" /> 
+        <meta charset="UTF-8" />
+        <style>
+           ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #262736;
+            }
+
+            li {
+            float: left;
+            border-right:1px solid #bbb;
+            }
+
+            li:last-child {
+            border-right: none;
+            }
+
+            li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            }
+
+            li a:hover:not(.active) {
+            background-color: #111;
+            }
+            .header{
+                
+                position: sticky;
+                top: 0
+                
+            }
+            .gradient{
+                height: 700px;
+                background-image: linear-gradient(to top, rgba(223, 230, 233,0.1), rgba(45, 52, 54,1)),
+                url('/Images/end.png');
+            }
+            h1{
+                float:right;
+                padding-right:580px;
+                padding-top:200px;
+                color:white;
+                font-family: "Lucida Console", "Courier New", monospace;
+            }
+            .text{
+                float:right;
+                padding-right:670px;
+                padding-top:50px;
+                color:white;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <div class="Nav">
+                <ul style="list-style-type:none">
+                    <li> <a href="/1 StartPage/index.html">Home</a></li>
+                    <li><a href="/1 StartPage/instructions.html">Instructions</a></li>
+                    <li><a href="/2 Outside/MainPage.html">Game</a></li>
+                    <li><a href="/1 StartPage/credits.html">Credits</a></li>
+           </div>
+
+           <div class ="container">
+           <h1>The end (you win)</h1>
+
+           </div>
+
+           <div class="gradient"></div>
+
+    </body>
+</html>

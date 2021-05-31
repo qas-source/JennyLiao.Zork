@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Main page</title> 
+        <meta name="author" content="Jenny" /> 
+        <meta name="description" content="outdoors" /> 
+        <meta charset="UTF-8" />
+        <style>
+            /*nav bar*/
+           ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: rgb(16, 172, 132);
+            }
+
+            li {
+            float: left;
+            border-right:1px solid #bbb;
+            }
+
+            li:last-child {
+            border-right: none;
+            }
+
+            li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            }
+
+            li a:hover:not(.active) {
+            background-color: #111;
+            }
+            .header{
+                
+                position: sticky;
+                top: 0
+                
+            }
+            /*an area to enter in the command/verb*/
+            .enterArea{
+                
+                position:absolute;
+                padding-left: 530px;
+            }
+            /*after the button is clicked, it enters in the command for a response*/
+            .button{
+                position:absolute;
+                margin-left: 950px;
+                margin-top: 10px;
+            }
+            body{
+
+                height: 700px;
+                background-image: linear-gradient(to top, rgba(131, 149, 167,0.8), rgba(200, 214, 229,0.8)),
+                url("/Images/MainPage.jpg");
+                background-repeat:repeat-y;
+                background-size: 1600px 800px;
+                }
+
+
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <div class="Nav">
+                <ul style="list-style-type:none">
+                    <li> <a href="/1 StartPage/index.html">Home</a></li>
+                    <li><a href="/1 StartPage/instructions.html">Instructions</a></li>
+                    <li><a href="/2 Outside/MainPage.html">Game</a></li>
+                    <li><a href="/1 StartPage/credits.html">Credits</a></li>
+           </div>
+            <br>
+            <!--the area where they can enter in a response-->
+                <div class = "enterArea"><textarea id="enterCommand" rows="2" cols="50"></textarea> </div>
+            <div class = "button"><button type="button" onclick="enterResponse()">Try it</button>   </div> 
+        </div>
+
+            <!--storyline, this disapears after enter is first clicked-->
+        <br><br><br><br>
+        <p id="story">You are standing in front of a tower. You seem to be surronded by a vast forest. You do not know why you are here, how you got here, and what you are doing here. All you remember is that you are not from this place and that you have to get out. The tower has a welcome mat, and the door is slightly open.
+        </p>
+
+        <!--the place where responses are-->
+            <p id="blank">Responses are here<br></p>
+            
+        <script src="MainPage.js"></script>
+    </body>
+</html>

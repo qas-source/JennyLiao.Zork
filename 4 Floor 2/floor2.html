@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Floor 2</title> 
+        <meta name="author" content="Jenny" /> 
+        <meta name="description" content="second floor" /> 
+        <meta charset="UTF-8" />
+        <style>
+            /*nav bar*/
+            ul {
+           list-style-type: none;
+           margin: 0;
+           padding: 0;
+           overflow: hidden;
+           background-color: rgb(242, 224, 172);
+           }
+
+           li {
+           float: left;
+           border-right:1px solid #bbb;
+           }
+
+           li:last-child {
+           border-right: none;
+           }
+
+           li a {
+           display: block;
+           color: black;
+           text-align: center;
+           padding: 14px 16px;
+           text-decoration: none;
+           }
+
+           li a:hover:not(.active) {
+           background-color: #111;
+           }
+           .header{   
+               position: sticky;
+               top: 0
+               
+           }
+           .enterArea{
+               
+               position:absolute;
+               padding-left: 530px;
+           }
+           .button{
+               position:absolute;
+               margin-left: 950px;
+               margin-top: 10px;
+           }
+           body{
+
+            background-image: linear-gradient(to top, rgba(131, 149, 167,0.9), rgba(200, 214, 229,0.9)),
+            url('/Images/floor2.jpg');
+            background-repeat:repeat-y;
+            background-size: 2000px 1000px;
+            }
+
+       </style>
+    </head>
+    <body>
+
+        <div class="header">
+            <div class="Nav">
+                <ul style="list-style-type:none">
+                    <li> <a href="/1 StartPage/index.html">Home</a></li>
+                    <li><a href="/1 StartPage/instructions.html">Instructions</a></li>
+                    <li><a href="/2 Outside/MainPage.html">Game</a></li>
+                    <li><a href="/1 StartPage/credits.html">Credits</a></li>
+           </div>
+            <br>
+                <div class = "enterArea"><textarea id="enterCommand" rows="2" cols="50"></textarea> </div>
+            <div class = "button"><button type="button" onclick="enterResponse()">Try it</button>   </div> 
+        </div>
+
+        <br><br><br><br>
+        <p id="story"> You have entered the second floor of the tower! Now that was easy, the coming challenges will be a bit harder...
+        </p> 
+
+        
+            <p id="blank">Responses are here<br></p>
+            
+        <script src="floor2.js"></script>
+    </body>
+</html>
